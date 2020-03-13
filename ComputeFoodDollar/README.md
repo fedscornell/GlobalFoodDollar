@@ -8,7 +8,7 @@ This section contains the data and SAS script for computing global food dollars.
 
  1. Please uncompress the downloaded data library to have the sqlGFD library in your directory.
  
- 2. Specify the directory of the sqlGFD library in the libraname statement in the [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) code.
+ 2. Specify the directory of the sqlGFD library in the libname statement in the [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) code.
 
 
 #### [[Back to Parent directory]](https://fedscornell.github.io/GlobalFoodDollar/)

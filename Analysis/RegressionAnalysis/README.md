@@ -10,6 +10,6 @@ This section contains the cleaned [dataset](https://github.com/FEDSCornell/Globa
 
  1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip), uncompress it to have the "Data" folder in your working directory.
 
- 2. Make sure that the working directory is specified properly in the "cd" command (included in the [STATA code](Analysis/RegressionAnalysis/GFDRegression.do).
+ 2. Make sure that the working directory is specified properly in the "cd" command (included in the [Stata code](Analysis/RegressionAnalysis/GFDRegression.do).
 
 #### [[Back to Parent directory]](https://fedscornell.github.io/GlobalFoodDollar/)

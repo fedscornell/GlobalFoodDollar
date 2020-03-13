@@ -13,7 +13,7 @@ This [section](ComputeFoodDollar) contains the data and SAS script for computing
 
  1. Please uncompress the downloaded data library to have the sqlGFD library in your directory.
  
- 2. Specify the directory of the sqlGFD library in the libraname statement in the [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) code.
+ 2. Specify the directory of the sqlGFD library in the libname statement in the [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) code.
 
 # [2. Data Preparation for Regression Analysis](Analysis/DataPreparation)
 
@@ -31,7 +31,7 @@ This [section](Analysis/DataPreparation/) contains [data](https://github.com/FED
  
  3. Create a "Data" folder in the working directory to save output data. 
 
-#### Major steps in this STATA code includes:
+#### Major steps in this Stata code includes:
 
   a. Reshape [farm share data](ComputeFoodDollar)	
 
@@ -49,10 +49,10 @@ This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https
 
 - The [Stata dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is developed for the regression analysis. 
 
-- [STATA code](Analysis/RegressionAnalysis/GFDRegression.do) can be used to replicate the regression analysis in table S4. 
+- [Stata code](Analysis/RegressionAnalysis/GFDRegression.do) can be used to replicate the regression analysis in table S4. 
 
 #### Instructions:
 
  1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip), uncompress it to have the "Data" folder in your working directory.
 
- 2. Make sure that the working directory is specified properly in the "cd" command (included in the [STATA code](Analysis/RegressionAnalysis/GFDRegression.do).
+ 2. Make sure that the working directory is specified properly in the "cd" command (included in the [Stata code](Analysis/RegressionAnalysis/GFDRegression.do).
