@@ -47,7 +47,7 @@ The final [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/A
 
 This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [Stata code](Analysis/RegressionAnalysis/GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
 
-- The [Stata dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) is developed for the regression analysis. 
+- The [Stata dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is developed for the regression analysis. 
 
 - [STATA code](Analysis/RegressionAnalysis/GFDRegression.do) can be used to replicate the regression analysis in table S4. 
 
