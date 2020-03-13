@@ -45,7 +45,7 @@ The final [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/A
 
 # [3. Regression Analysis](Analysis/RegressionAnalysis)
 
-This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [Stata code](Analysis/RegressionAnalysis/GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
+This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) and [Stata code](Analysis/RegressionAnalysis/GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
 
 - The [Stata dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is developed for the regression analysis. 
 
@@ -53,6 +53,6 @@ This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https
 
 #### Instructions:
 
- 1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta), uncompress it to have the "Data" folder in your working directory.
+ 1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip), uncompress it to have the "Data" folder in your working directory.
 
  2. Make sure that the working directory is specified properly in the "cd" command (included in the [STATA code](Analysis/RegressionAnalysis/GFDRegression.do).
