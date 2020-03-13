@@ -42,3 +42,10 @@ This [folder](Analysis/DataPreparation/) contains [datasets](https://github.com/
 This [folder](Analysis/DataPreparation) contains datasets and STATA scripts for generating data of regression analysis. The [STATA script](Analysis/DataPreparation/Data Preparation.do) and [STATA datasets](Analysis/DataPreparation/DataPreparation.zip) can be used to replicate the dataset for [regression analysis](Analysis/RegressionAnalysis). The final dataset  is also available to download if you prefer to skip the data preparation step. 
 
 # 3. [To Replicate the Regression Analysis](Analysis/RegressionAnalysis)
+
+This folder contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [STATA code](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) of regression analysis of the global food dollar research project. 
+
+
+- [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) is the STATA dataset for the regression. Please download the zipped file and uncompress it to have the "Data" folder on your local. 
+
+- [STATA code](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) can be used to replicate the regression analysis.
