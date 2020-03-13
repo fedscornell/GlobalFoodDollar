@@ -4,7 +4,7 @@
 * This STATA code is developed for regression analysis.
 * The "farm share, WB, FAO.dta" is available at:
 * https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip
-* Download the zip file, uncompress it, and you will have the "Data folder"
+* Download the zipped file, uncompress it, and you will have the "Data folder"
 
 * The STATA dataset "farm share, WB, FAO.dta" can be replicated using the STATA code and datasets in 
 * https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/

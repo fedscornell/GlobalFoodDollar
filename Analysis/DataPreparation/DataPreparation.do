@@ -24,12 +24,12 @@
 				
 *4) Merge all data sets: save as "$data\farm share, WB, FAO.dta"
 
-* DataPreparation zip file is available at: 
+* The DataPreparation zipped folder is available at: 
 * https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
 
-* You can download the zip file and uncompress it.
+* You can download the zipped file and uncompress it.
 
-*Make sure to set working directory properly
+* Make sure to set working directory properly
 *****************************************************************************
 		
 set more off
