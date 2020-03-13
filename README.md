@@ -2,7 +2,7 @@
 
 This repository is created to share data and code of the global food dollar research project. 
 
-# [To Compute Food Dollars](ComputeFoodDollar\README.md)
+# [To Compute Food Dollars](ComputeFoodDollar)
 
 This [folder](ComputeFoodDollar) contains data and SAS script for computing global food dollars. 
 
