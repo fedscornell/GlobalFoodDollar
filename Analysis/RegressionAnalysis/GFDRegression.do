@@ -1,6 +1,5 @@
 *****************************************************************************
-* This script is developed for the global food dollar project
-
+* This script is developed for the global food dollar project.
 * This STATA code is developed for regression analysis.
 * The "farm share, WB, FAO.dta" is available at:
 * https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip
@@ -10,16 +9,14 @@
 * https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/
 
 * Regression 
-*****************************************************************************
+********************************************************************************
 set more off
 clear all
-
+*******************Edit Directory Here******************************************
 cd "Your directory here. This folder should contain the uncompressed Data folder"
+********************************************************************************
 global data ".\Data" 
-
 use  "$data\farm share, WB, FAO.dta"
-sum
-
 tab indicator
 
 *The variable "indicator" indicates the type of estimate and is coded as:
@@ -40,7 +37,6 @@ gen ln_population = ln(population)
 *Generate Productivity Measure	
 gen productivity_r = gross_production_value/agriculture_land_total
 label var productivity "Productivity Raw (gross production value(constant million US)/agriculture land(1000 ha))"
-
 *Rescale Productivity
 gen productivity = productivity_r/100
 	label var productivity "Productivity scaled (gross production value(constant 100 million US)/agriculture land(1000 ha))"
@@ -48,7 +44,6 @@ gen productivity = productivity_r/100
 * Rescale Year : Recode 2005-2015 to 1-11
 rename year year_raw
 gen year = year_raw
-
 recode year (2005=1) (2006=2) (2007=3) (2008=4) (2009=5) (2010=6) (2011=7) (2012=8) (2013=9) (2014=10) (2015=11)
 
 *Drop Ireland, Turkey, and Luxembourg
@@ -147,15 +142,17 @@ est clear
 
 
 ********* Food, Food & Tobacco, Food Service & Accommodation***********
-*(1)
+*(1) Table S4: Farm shares of consumer food expenditures in the Supplementary Material
 reg farm_share $x i.indicator [iweight=weight_FFTFSA], cluster (id) robust
 eststo a1
 
-/*Predicted values for food only and food&tobacco: Indicator FE Model
-Predict pfta_fs1
-Label var pfta_fs1 "Food, Tobacco, Accommodation Indicator FE"
-	*/
+/*Predicted values for food only and food&tobacco: Indicator FE Model*/
+predict pfta_fs1
+label var pfta_fs1 "Food, Tobacco, Accommodation Indicator FE"
+	
 
+*****************************************************************************
+******************* Other regressions****************************************
 
 *(2)
 reg farm_share $x i.indicator i.id [iweight=weight_FFTFSA], cluster(id)robust

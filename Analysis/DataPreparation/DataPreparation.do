@@ -1,7 +1,13 @@
 *****************************************************************************
-* This script is developed for the global food dollar project
+* This script is developed for the global food dollar project.
 
-* This STATA code is developed to merge data from different sources for regression.
+* This STATA code is developed to merge data from different sources for regression analysis.
+* The "DataPreparation" folder contains all source data needed for this step. 
+* The zipped folder is available at: 
+* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
+* 1. Please download the zipped file and uncompress it to have the "DataPreparation" folder in your working directory.
+* 2. Make sure that the working directory is sepcified properly use the "cd" command (included below).
+* 3. Create a "Data" folder in the working directory to save data
 
 * Major steps in this STATA code includes:
 
@@ -24,28 +30,24 @@
 				
 *4) Merge all data sets: save as "$data\farm share, WB, FAO.dta"
 
-* The DataPreparation zipped folder is available at: 
-* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
 
-* You can download the zipped file and uncompress it.
-
-* Make sure to set working directory properly
-*****************************************************************************
+********************************************************************************
 		
 set more off
 clear all
-
+*******************Edit Directory Here******************************************
 cd "Your directory here. This folder should contain the uncompressed DataPreparation folder"
-
-global data ".\DataPreparation"
+********************************************************************************
+global data ".\DataPreparation" 	/* "DataPreparation" is downloaded and uncompressed folder*/
+global dataOutput ".\Data" 			/* This folder will contain the output data*/
 
 
 *1
-*****************************************************************************
+********************************************************************************
 *Import farm share data from excel file 
 *sheets "Food", "Food & Tobacco", "Foodservice and accommodation", and
 *"Food, Tobacco, accommodation"
-*****************************************************************************
+********************************************************************************
 *Food
 clear
 import excel "$data\Farm share.xlsx", sheet("Food") firstrow
@@ -82,9 +84,8 @@ save "$data\Foodservice and accommodation.dta", replace
 
 
 *Merge farm share data sets
-*****************************************************************************
+********************************************************************************
 use "$data\Food.dta", clear
-
 append using "$data\Food and Tobacco.dta" 
 append using "$data\Foodservice and accommodation.dta"
 
@@ -107,10 +108,10 @@ save "$data\farmshare.dta", replace
 
 
 *2
-*****************************************************************************
+********************************************************************************
 *Import World Bank data
 *Data downloaded from https://data.worldbank.org/
-*****************************************************************************
+********************************************************************************
 *Population
 clear 
 import excel "$data\Population.xls", sheet("Population") firstrow
@@ -248,10 +249,10 @@ save "$data\WB data.dta", replace
 
 
 *3
-*****************************************************************************
+********************************************************************************
 *Import FAO stat data
 *Data downloaded from http://www.fao.org/faostat/en/#home
-*****************************************************************************
+********************************************************************************
 
 *Gross Production Value (constant 2004-2006 million US$)
 clear 
@@ -411,9 +412,9 @@ save "$data\FAO data.dta", replace
 
 
 *4
-*****************************************************************************
+********************************************************************************
 *Merge farm share data, World Bank data, and FAO Stat data
-*****************************************************************************
+********************************************************************************
 clear
 use "$data\WB data.dta"
 merge 1:m id year using "$data\farmshare.dta"
@@ -424,10 +425,8 @@ drop _merge
 label var id "Country id"
 label var country "Country name"
 order id country year farm_share indicator population urbanization electricity gdp_pc_ppp gross_production_value agriculture_land_total ag_employment
-
 keep id country year farm_share indicator population urbanization electricity gdp_pc_ppp gross_production_value agriculture_land_total ag_employment
-
 drop if farm_share == .
 tab indicator 
 
-save "$data\farm share, WB, FAO.dta", replace
+save "$dataOutput\farm share, WB, FAO.dta", replace
