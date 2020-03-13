@@ -1,4 +1,4 @@
-# Global Food Dollar Research Project: Computation of Farm Shares
+# Computation of Farm Shares
 This [section](ComputeFoodDollar) contains the data and SAS script for computing global food dollars. 
 
 - [sqlGFD.zip](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/sqlGFD.zip) is the SAS data library. 
