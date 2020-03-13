@@ -1,4 +1,4 @@
-# Global Food Dollar Research Project 
+# Global Food Dollar Research Project: Regression Analysis
 
 This folder contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [Stata code](GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
 

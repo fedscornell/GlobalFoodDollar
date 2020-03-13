@@ -1,4 +1,4 @@
-# Global Food Dollar Research Project 
+# Global Food Dollar Research Project: Data Preparation for Regression Analysis]
 
 This folder contains [data](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) and [Stata scripts](DataPreparation.do) to create the dataset for regression analysis. If you prefer to skip the data preparation step, the final dataset is also available at [Here](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip).
 
