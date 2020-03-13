@@ -1,4 +1,15 @@
-## Welcome to GitHub Pages
+# Global Food Dollar Research Project 
+
+This repository is created to share data and code of the global food dollar research project. 
+
+# [To Compute Food Dollars](ComputeFoodDollar)
+
+This folder contains data and SAS script for computing global food dollars. 
+
+- [sqlGFD.zip](ComputeFoodDollar\sqlGFD.zip) is the SAS data library. Please download the zip file and uncompress it. 
+
+- [GFD.sas](ComputeFoodDollar\GFD.sas)
+
 
 You can use the [editor on GitHub](https://github.com/FEDSCornell/GlobalFoodDollar/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
