@@ -1,10 +1,15 @@
 # Global Food Dollar Research Project 
 
-This folder contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [STATA code](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) of regression analysis of the global food dollar research project. 
+This folder contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [Stata code](GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
 
+- [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) is the STATA dataset for the regression. 
 
-- [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) is the STATA dataset for the regression. Please download the zipped file and uncompress it to have the "Data" folder on your local. 
+- [STATA code](GFDRegression.do) can be used to replicate the regression analysis. 
 
-- [STATA code](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) can be used to replicate the regression analysis. 
+#### Instructions:
+
+ 1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta), uncompress it to have the "Data" folder in your working directory.
+
+ 2. Make sure that the working directory is specified properly in the "cd" command (included in the [STATA code](Analysis/RegressionAnalysis/GFDRegression.do).
 
 #### [[Back to Parent directory]](https://fedscornell.github.io/GlobalFoodDollar/)

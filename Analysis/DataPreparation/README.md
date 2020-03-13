@@ -1,29 +1,33 @@
 # Global Food Dollar Research Project 
 
-This folder contains [datasets](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) and [STATA scripts](DataPreparation.do) for preparing regression dataset. The final dataset is also available at [Here](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip).
+This folder contains [data](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) and [Stata scripts](DataPreparation.do) to create the dataset for regression analysis. If you prefer to skip the data preparation step, the final dataset is also available at [Here](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip).
 
-- You can download The [DataPreparation zipped folder](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) from: 
-[https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip "https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip")
+- The [DataPreparation](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) zipped folder contains all source data needed for this step.
 
-- [The STATA script](DataPreparation.do) is developed to merge data from different sources for regression. Major steps in this STATA code includes:
-	1. Farm share data	
-	*Import sheets "Food", "Food & Tobacco", "Foodservice and accommodation", and "Food, Tobacco, accommodation"		
-	*Reshape data		
-	*Generate an indicator var that is coded 1 for food, 2 for food&tobacco, and 3 for food&accommodation		
-	*Merge all farmshare data sets
+- The [STATA script](DataPreparation.do) is developed to merge data from different sources for regression. 
+
+#### Instructions:
+
+ 1. Please download the [DataPreparation](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) zipped file and uncompress it to have the "DataPreparation" folder in your working directory.
+ 
+ 2. Make sure that the working directory is specified properly in the "cd" command (included in the Stata code).
+ 
+ 3. Create a "Data" folder in the working directory to save output data. 
+
+#### Major steps in this STATA code includes:
+
+  a. Reshape [farm share data](ComputeFoodDollar)	
+
+  b. Prepare population, urbanization, GDP, access to electricity data from [World Bank](https://data.worldbank.org/)
+
+  c. Prepare gross production values, agricultural value added and land data from [FAOSTAT](http://www.fao.org/faostat/en/)
+
+  d. merge all data sets.
 	
+The final [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is also available to download if you prefer to skip the data preparation step. 
 
-	2. World Bank data
-	*Import data form excel
-	*Reshape data
-	*Assign same country id as in farm share data
-	*Merge all data sets		
 
-	3. FAO Stat data
-	*Import data form excel
-	*Assign same country id as in farm share data
-	*Merge all data sets
-				
-	4. Merge all data sets: save as "$data\farm share, WB, FAO.dta" for regression.
+
+
 	
 #### [[Back to Parent directory]](https://fedscornell.github.io/GlobalFoodDollar/)
