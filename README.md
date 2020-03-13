@@ -33,13 +33,13 @@ This [folder](Analysis/DataPreparation/) contains [data](https://github.com/FEDS
 
 #### Major steps in this STATA code includes:
 
-	a. Reshape [farm share data](ComputeFoodDollar)	
-	
-	b. Prepare population, urbanization, GDP, access to electricity data from [World Bank](https://data.worldbank.org/)
-	
-	c. Prepare gross production values, agricultural value added and land data from [FAOSTAT](http://www.fao.org/faostat/en/)
-	
-	d. merge all data sets.
+  a. Reshape [farm share data](ComputeFoodDollar)	
+
+  b. Prepare population, urbanization, GDP, access to electricity data from [World Bank](https://data.worldbank.org/)
+
+  c. Prepare gross production values, agricultural value added and land data from [FAOSTAT](http://www.fao.org/faostat/en/)
+
+  d. merge all data sets.
 	
 The final [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is also available to download if you prefer to skip the data preparation step. 
 
