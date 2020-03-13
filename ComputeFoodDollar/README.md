@@ -1,4 +1,4 @@
-# Global Food Dollar Research Project 
+# Global Food Dollar Research Project: Computation of Farm Shares
 
 This folder contains data and SAS script for computing global food dollars. 
 
