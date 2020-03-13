@@ -1,6 +1,6 @@
 # Global Food Dollar Research Project 
 
-#### This repository is created to share data and code of the global food dollar research project. 
+This repository is created to share data and code of the global food dollar research project. 
 
 # 1. [Computation of Farm Shares](ComputeFoodDollar)
 
