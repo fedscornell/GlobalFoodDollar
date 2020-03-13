@@ -2,8 +2,9 @@
 * This script is developed for the global food dollar project
 
 * This STATA code is developed for regression analysis.
-* The farm share, WB, FAO.dta is available at:
-* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta
+* The "farm share, WB, FAO.dta" is available at:
+* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip
+* Download the zip file, uncompress it, and you will have the "Data folder"
 
 * The STATA dataset "farm share, WB, FAO.dta" can be replicated using the STATA code and datasets in 
 * https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/
@@ -13,7 +14,7 @@
 set more off
 clear all
 
-cd "Your directory here. This folder should contain the uncompressed DataPreparation folder"
+cd "Your directory here. This folder should contain the uncompressed Data folder"
 global data ".\Data" 
 
 use  "$data\farm share, WB, FAO.dta"

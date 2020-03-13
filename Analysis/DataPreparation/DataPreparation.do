@@ -1,6 +1,6 @@
 *****************************************************************************
-
 * This script is developed for the global food dollar project
+
 * This STATA code is developed to merge data from different sources for regression.
 
 * Major steps in this STATA code includes:
