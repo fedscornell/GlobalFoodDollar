@@ -1,10 +1,10 @@
 /***************************************************************************************************/ 
 /* This script is developed for the global food dollar project */
 
-/* The sqlGFD library is available at: https://github.com/FEDSCornell/GlobalFoodDollar/blob/master/ComputeFoodDollar/sqlGFD.zip */
+/* The sqlGFD library is available at: https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/ComputeFoodDollar/sqlGFD.zip */
 
 /*1. Please uncompress the downloaded data library to have the sqlGFD library in your directory. */
-/*2. Specify the directory of the sqlGFD library in the libraname statement */
+/*2. Edit 'YourDirectory' to specify the directory of this sqlGFD library */
 
 /***************************************************************************************************/
 
