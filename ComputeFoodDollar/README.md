@@ -6,4 +6,3 @@ This folder contains data and SAS script for computing global food dollars.
 
 - [GFD.sas](GFD.sas)
 
-TEST
