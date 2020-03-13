@@ -2,7 +2,7 @@
 
 This repository is created to share data and code of the global food dollar research project. 
 
-# 1. [Computation of Farm Shares](ComputeFoodDollar)
+# [1. Computation of Farm Shares](ComputeFoodDollar)
 
 This [section](ComputeFoodDollar) contains the data and SAS script for computing global food dollars. 
 
@@ -15,7 +15,7 @@ This [section](ComputeFoodDollar) contains the data and SAS script for computing
  
  2. Specify the directory of the sqlGFD library in the libraname statement in the [GFD.sas](ComputeFoodDollar\GFD.sas) code.
 
-# 2. [Data Preparation for Regression Analysis](Analysis/DataPreparation)
+# [2. Data Preparation for Regression Analysis](Analysis/DataPreparation)
 
 This [section](Analysis/DataPreparation/) contains [data](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) and [Stata scripts](Analysis/DataPreparation/DataPreparation.do) to create the dataset for regression analysis. If you prefer to skip the data preparation step, the final dataset is also available at [Here](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip).
 
@@ -43,7 +43,7 @@ This [section](Analysis/DataPreparation/) contains [data](https://github.com/FED
 	
 The final [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is also available to download if you prefer to skip the data preparation step. 
 
-# 3. [Regression Analysis](Analysis/RegressionAnalysis)
+# [3. Regression Analysis](Analysis/RegressionAnalysis)
 
 This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [Stata code](Analysis/RegressionAnalysis/GFDRegression.do) of creating regression results (table S4 in the supplementary materials)
 
