@@ -1,6 +1,9 @@
-* Data preparation
 *****************************************************************************
+
 * This script is developed for the global food dollar project
+* This STATA code is developed to merge data from different sources for regression.
+
+* Major steps in this STATA code includes:
 
 *1) Farm share data	
 	*Import sheets "Food", "Food & Tobacco", "Foodservice and accommodation", and "Food, Tobacco, accommodation"		
@@ -21,15 +24,18 @@
 				
 *4) Merge all data sets: save as "$data\farm share, WB, FAO.dta"
 
+* DataPreparation zip file is available at: 
+* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
+
+* You can download the zip file and uncompress it.
+
+*Make sure to set working directory properly
+*****************************************************************************
 		
 set more off
 clear all
 
-*Make sure to set working directory properly
-
 cd "Your directory here. This folder should contain the uncompressed DataPreparation folder"
-* DataPreparation zip file is available at: 
-* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
 
 global data ".\DataPreparation"
 
