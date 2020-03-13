@@ -4,7 +4,7 @@ This repository is created to share data and code of the global food dollar rese
 
 # [To Compute Food Dollars](ComputeFoodDollar)
 
-This folder contains data and SAS script for computing global food dollars. 
+This [folder](ComputeFoodDollar) contains data and SAS script for computing global food dollars. 
 
 - [sqlGFD.zip](ComputeFoodDollar\sqlGFD.zip) is the SAS data library. Please download the zip file and uncompress it. 
 
