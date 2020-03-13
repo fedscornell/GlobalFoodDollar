@@ -1,9 +1,12 @@
 *****************************************************************************
 * This script is developed for the global food dollar project.
+
 * This STATA code is developed for regression analysis.
 * The "farm share, WB, FAO.dta" is available at:
 * https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip
-* Download the zipped file, uncompress it, and you will have the "Data folder"
+* 1. Please download the zipped file, uncompress it to have the "Data" folder in your working directory.
+* 2. Make sure that the working directory is specified properly in the "cd" command (included below).
+
 
 * The STATA dataset "farm share, WB, FAO.dta" can be replicated using the STATA code and datasets in 
 * https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/
@@ -146,13 +149,10 @@ est clear
 reg farm_share $x i.indicator [iweight=weight_FFTFSA], cluster (id) robust
 eststo a1
 
-/*Predicted values for food only and food&tobacco: Indicator FE Model*/
+/*Predicted values for food only and food&tobacco: Indicator FE Model
 predict pfta_fs1
 label var pfta_fs1 "Food, Tobacco, Accommodation Indicator FE"
-	
-
-*****************************************************************************
-******************* Other regressions****************************************
+*/	
 
 *(2)
 reg farm_share $x i.indicator i.id [iweight=weight_FFTFSA], cluster(id)robust
@@ -181,77 +181,3 @@ Predict pfta_fs4
 Label var pfta_fs4 "Food, Tobacco, Accommodation Indicator, Country FE, Year Trend Model"
 	*/	
 	
-	
-********* Food Only and Food & Tobacco *********
-*(1.1)
-*Might need to install the estout package. Uncomment the following command if needed.
-*ssc install estout, replace
-reg farm_share $x i.indicator if indicator == 1 | indicator == 2 [iweight=weight_FFT], cluster (id) robust 
-eststo a
-
-/*Predicted values for food only and food&tobacco: Indicator FE Model
-Predict pft_fs1 if indicator == 1 | indicator == 2
-Label var pft_fs1 "Food and Tobacco Indicator FE"
-	*/
-
-*(2.1)
-reg farm_share $x i.indicator i.id if indicator == 1 | indicator == 2 [iweight=weight_FFT], cluster (id)robust
-	eststo b	
-
-/*Predicted values for food only and food&tobacco: Indicator and Country FE Model
-Predict pft_fs2 if indicator == 1 | indicator == 2
-Label var pft_fs2 "Food and Tobacco Indicator & Country FE"
-	*/
-
-
-*(3.1)
-reg farm_share $x i.indicator i.id i.year if indicator == 1 | indicator == 2 [iweight=weight_FFT], cluster (id)robust
-eststo c
-
-/*Predicted values for food only and food&tobacco: Indicator, Country, Year FE Model
-Predict pft_fs3 if indicator == 1 | indicator == 2
-Label var pft_fs3 "Food and Tobacco Indicator, Country, Year FE"
-*/
-
-*(4.1)
-reg farm_share $x year i.indicator i.id if indicator == 1 | indicator == 2 [iweight=weight_FFT], cluster (id)robust
-eststo d
-/*Predicted values for food only and food&tobacco: Indicator, Country, FE, and Year Trend Model
-Predict pft_fs4 if indicator == 1 | indicator == 2
-	Label var pft_fs4 "Food and Tobacco Indicator, Country FE, Year Trend"
-	*/
-	
-
-esttab  a1 b1 c1 d1 a b c d using results.csv, nogaps compress label ///
-nobaselevels b(%9.3f) se(%9.3f) star(* 0.1 ** 0.05 *** 0.01) replace
-
-
-***Correlation between explanatory variables
-global exp_vars farm_share ln_gdp_pc_ppp productivity ln_population urbanization  electricity  ag_employment
-correlate $exp_vars 
-correlate  $exp_vars if indicator==1 | indicator ==2 
-
-
-*Number of Countries with Farm Shares
-*Might need to install the unique package. Uncomment the following command if needed.
-*ssc install unique
-unique country if indicator==1
-unique country if indicator==2
-unique country if indicator==3
-unique country if indicator==1 | indicator==2
-
-
-* Country-Year pairs for food only and food&tobacco
-tab country year if indicator ==1 | indicator==2
-
-***Descriptive statistics of predicted farm shares
-sum pft* if indicator==1
-sum pft* if indicator==2
-sum pft* if indicator==3
-
-drop _est*
-save "$data\farm share, WB, FAO, w predict.dta", replace
-
-
-keep country year indicator farm_share pft*
-save "$data\farm_share predict.dta"

@@ -6,8 +6,8 @@
 * The zipped folder is available at: 
 * https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
 * 1. Please download the zipped file and uncompress it to have the "DataPreparation" folder in your working directory.
-* 2. Make sure that the working directory is sepcified properly use the "cd" command (included below).
-* 3. Create a "Data" folder in the working directory to save data
+* 2. Make sure that the working directory is specified properly in the "cd" command (included below).
+* 3. Create a "Data" folder in the working directory to save output data.
 
 * Major steps in this STATA code includes:
 

@@ -3,7 +3,8 @@
 
 /* The sqlGFD library is available at: https://github.com/FEDSCornell/GlobalFoodDollar/blob/master/ComputeFoodDollar/sqlGFD.zip */
 
-/*Pleaes uncompress the downloaded data library and make sure that the directory of the sqlGFD library is changed accordingly*/
+/*1. Please uncompress the downloaded data library to have the sqlGFD library in your directory. */
+/*2. Specify the directory of the sqlGFD library in the libraname statement */
 
 /***************************************************************************************************/
 
