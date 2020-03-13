@@ -6,14 +6,14 @@ This repository is created to share data and code of the global food dollar rese
 
 This [section](ComputeFoodDollar) contains the data and SAS script for computing global food dollars. 
 
-- [sqlGFD.zip](ComputeFoodDollar\sqlGFD.zip) is the SAS data library. 
-- [GFD.sas](ComputeFoodDollar\GFD.sas) is the SAS code for computing global food dollars using the [sqlGFD](ComputeFoodDollar\sqlGFD.zip) library. 
+- [sqlGFD.zip](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/sqlGFD.zip) is the SAS data library. 
+- [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) is the SAS code for computing global food dollars using the [sqlGFD](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/sqlGFD.zip) library. 
 
 #### Instructions:
 
  1. Please uncompress the downloaded data library to have the sqlGFD library in your directory.
  
- 2. Specify the directory of the sqlGFD library in the libraname statement in the [GFD.sas](ComputeFoodDollar\GFD.sas) code.
+ 2. Specify the directory of the sqlGFD library in the libraname statement in the [GFD.sas](https://fedscornell.github.io/GlobalFoodDollar/ComputeFoodDollar/GFD.sas) code.
 
 # [2. Data Preparation for Regression Analysis](Analysis/DataPreparation)
 
