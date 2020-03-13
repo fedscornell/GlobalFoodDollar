@@ -2,7 +2,7 @@
 
 This repository is created to share data and code of the global food dollar research project. 
 
-# 1. [To Compute Food Dollars](ComputeFoodDollar)
+# 1. [To Compute Food Dollars:](ComputeFoodDollar)
 
 This [folder](ComputeFoodDollar) contains data and SAS scripts for computing global food dollars. 
 
@@ -10,7 +10,7 @@ This [folder](ComputeFoodDollar) contains data and SAS scripts for computing glo
 
 - [GFD.sas](ComputeFoodDollar\GFD.sas) is the SAS code for computing global food dollars. 
 
-# 2. [To Prepare Data for Regression Analysis](Analysis/DataPreparation)
+# 2. [To Prepare Data for Regression Analysis:](Analysis/DataPreparation)
 
 
 This [folder](Analysis/DataPreparation/) contains [datasets](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip) and [STATA scripts](DataPreparation.do) for preparing regression dataset. The final dataset is also available at [Here](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip).
@@ -41,7 +41,7 @@ This [folder](Analysis/DataPreparation/) contains [datasets](https://github.com/
 
 This [folder](Analysis/DataPreparation) contains datasets and STATA scripts for generating data of regression analysis. The [STATA script](Analysis/DataPreparation/Data Preparation.do) and [STATA datasets](Analysis/DataPreparation/DataPreparation.zip) can be used to replicate the dataset for [regression analysis](Analysis/RegressionAnalysis). The final dataset  is also available to download if you prefer to skip the data preparation step. 
 
-# 3. [To Replicate the Regression Analysis](Analysis/RegressionAnalysis)
+# 3. [To Replicate the Regression Analysis:](Analysis/RegressionAnalysis)
 
 This folder contains the cleaned [dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data/farm%20share%2C%20WB%2C%20FAO.dta) and [STATA code](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) of regression analysis of the global food dollar research project. 
 
