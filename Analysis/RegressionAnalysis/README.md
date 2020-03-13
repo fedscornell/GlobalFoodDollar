@@ -4,7 +4,7 @@ This section contains the cleaned [dataset](https://github.com/FEDSCornell/Globa
 
 - The [Stata dataset](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip) is developed for the regression analysis. 
 
-- [STATA code](GFDRegression.do) can be used to replicate the regression analysis in table S4. 
+- [Stata code](GFDRegression.do) can be used to replicate the regression analysis in table S4. 
 
 #### Instructions:
 
