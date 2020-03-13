@@ -1,5 +1,6 @@
 *****************************************************************************
-* This script is developed for the global food dollar project.
+* This script is developed for the global food dollar project: https://fedscornell.github.io/GlobalFoodDollar/
+* More descriptions of this section is available at: https://fedscornell.github.io/GlobalFoodDollar/Analysis/RegressionAnalysis/
 
 * This STATA code is developed for regression analysis.
 * The "farm share, WB, FAO.dta" is available at:

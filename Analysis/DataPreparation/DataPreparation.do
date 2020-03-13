@@ -1,10 +1,13 @@
 *****************************************************************************
-* This script is developed for the global food dollar project.
+* This script is developed for the global food dollar project: https://fedscornell.github.io/GlobalFoodDollar/
+* More descriptions of this section is available at: https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/
 
 * This STATA code is developed to merge data from different sources for regression analysis.
 * The "DataPreparation" folder contains all source data needed for this step. 
-* The zipped folder is available at: 
-* https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
+* The zipped folder is available at: https://fedscornell.github.io/GlobalFoodDollar/Analysis/DataPreparation/
+
+* Instrucitons:
+* The zipped data file is available at: https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/DataPreparation/DataPreparation.zip
 * 1. Please download the zipped file and uncompress it to have the "DataPreparation" folder in your working directory.
 * 2. Make sure that the working directory is specified properly in the "cd" command (included below).
 * 3. Create a "Data" folder in the working directory to save output data.
