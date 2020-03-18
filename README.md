@@ -56,3 +56,15 @@ This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https
  1. Please download the [zipped file](https://github.com/FEDSCornell/GlobalFoodDollar/raw/master/Analysis/RegressionAnalysis/Data.zip), uncompress it to have the "Data" folder in your working directory.
 
  2. Make sure that the working directory is specified properly in the "cd" command (included in the [Stata code](Analysis/RegressionAnalysis/GFDRegression.do).
+  
+----------------------------------------------------------------------------------------------
+#### Acknowledgments:  
+
+E, Meemken acknowledges support from the German Research Foundation (DFG-fellowship GZ: ME 5179/1-1). 
+
+The findings and conclusions in this manuscript are those of the authors and should not be construed to represent any official USDA or U.S. Government determination or policy.
+
+#### Funding: 
+
+This work was supported by the Cornell SC Johnson College of Business and Cooperative Agreement number 58-4000-8-0051 between Cornell University and the Economic Research Service of the U.S. Department of Agriculture. 
+
