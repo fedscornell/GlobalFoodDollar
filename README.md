@@ -58,7 +58,7 @@ This [section](Analysis/RegressionAnalysis) contains the cleaned [dataset](https
  2. Make sure that the working directory is specified properly in the "cd" command (included in the [Stata code](Analysis/RegressionAnalysis/GFDRegression.do).
   
 ----------------------------------------------------------------------------------------------
-#### Acknowledgments:  
+# Acknowledgments:  
 
 E, Meemken acknowledges support from the German Research Foundation (DFG-fellowship GZ: ME 5179/1-1). 
 
