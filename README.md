@@ -64,7 +64,7 @@ E, Meemken acknowledges support from the German Research Foundation (DFG-fellows
 
 The findings and conclusions in this manuscript are those of the authors and should not be construed to represent any official USDA or U.S. Government determination or policy.
 
-#### Funding: 
+# Funding: 
 
 This work was supported by the Cornell SC Johnson College of Business and Cooperative Agreement number 58-4000-8-0051 between Cornell University and the Economic Research Service of the U.S. Department of Agriculture. 
 
