@@ -334,7 +334,6 @@ DO KK = 1 TO NROW(COUNTRIES);
 		ROWS OF THE PCE COLUMN OF THE FINAL DEMAND MATRIX (Y2)
 		*/
 
-		YFAAFH = Y2[,PCE_COL];
 		YFAAFH = 0*Y2[,PCE_COL];
 		YFAAFH[afs_rows] = Y2[afs_rows,PCE_COL];
 		YFAAFH[afsf_rows] = Y2[afsf_rows,PCE_COL];
